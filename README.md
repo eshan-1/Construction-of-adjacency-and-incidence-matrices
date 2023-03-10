@@ -10,7 +10,7 @@
 ### Пункт 2.
 Построение матрицы смежности по матрице весов. Проходимся по каждому элементу матрицы весов, если же элемент не равен нулю, то ставим единицу, иначе ноль.
 
-`Function Weights2Adj(Weights: Matrix; Size: integer): Matrix;
+```Function Weights2Adj(Weights: Matrix; Size: integer): Matrix;
 Var AdjMatrix: Matrix;
     i, j: integer;
 Begin
@@ -22,7 +22,7 @@ Begin
         AdjMatrix := 0;
 
   Result := AdjMatrix;
-End;`
+End;```
 
 ### Пункт 3.
 Построение матрицы инцидентности по матрице смежности осуществляется проходом по столбцам. Количество ребёр — количество единиц в матрице смежности. Строим матрицу N на M, где N — количество вершин, а M — количество рёбер. Строка элемента равного единице в матрице смежности — откуда идёт дуга (начало — 1), столбец элемента равного единице в матрице смежности — куда идёт дуга (конец — -1).
@@ -39,7 +39,7 @@ When constructing the adjacency matrix along the graph, it is necessary to denot
 ### Item 2.
 Construction of the adjacency matrix by the matrix of weights. We go through each element of the matrix of weights, if the element is not zero, then we put one, otherwise zero.
 
-`Function Weights2Adj(Weights: Matrix; Size: integer): Matrix;
+```Function Weights2Adj(Weights: Matrix; Size: integer): Matrix;
 Var AdjMatrix: Matrix;
     i, j: integer;
 Begin
@@ -51,7 +51,7 @@ Begin
         AdjMatrix := 0;
 
   Result := AdjMatrix;
-End;`
+End;```
 
 ### Item 3.
 The construction of the incidence matrix by the adjacency matrix is carried out by passing through the columns. The number of edges is the number of units in the adjacency matrix. We construct a matrix N by M, where N is the number of vertices and M is the number of edges. The row of an element equal to one in the adjacency matrix is where the arc comes from (beginning — 1), the column of an element equal to one in the adjacency matrix is where the arc goes (end — -1).
